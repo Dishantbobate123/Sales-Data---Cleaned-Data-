@@ -1,26 +1,60 @@
-Sales Data - Cleaned Dataset for Power BI Dashboard
-Overview
-This repository contains the cleaned and processed sales dataset originally sourced as "Sales_Data.csv." The data has been thoroughly cleaned and enhanced for effective use in Power BI dashboard development.
 
-Dataset Description
-Rows: 5,000 sales records
-Columns: 20 attributes including original and calculated fields
-Data Period: 2010 to 2017
-Geographic Coverage: 7 regions worldwide, 185 countries
-Product Categories: 12 item types (Fruits, Beverages, Baby Food, etc.)
+📌 Project Overview
 
-Data Cleaning Summary
-Missing values in Item_Type filled with "Unknown"
-Missing Order_ID values replaced with unique generated IDs
-Dates (Order_Date, Ship_Date) standardized to ISO datetime format
-Converted Order_ID to integer for consistency
-Added new calculated columns to support advanced analysis:
-  Total_Revenue
-  Total_Cost
-  Profit
-  Profit_Margin_Percent
-  Days_to_Ship
-  Order_Year, Order_Month, Order_Quarter, Order_Month_Name
+This dataset contains cleaned and structured sales data intended for data analysis, visualization, and machine-learning tasks. The file has been pre-processed to remove duplicates, handle missing values, and apply consistent formatting across all fields.
 
-Usage
-This dataset is optimized for import into Power BI for sales performance visualization, profitability analysis, and operational metrics tracking.
+Rows: 5,000 (100% retained)
+Columns: 20 (increased from 11)
+Data Quality: 100% complete - no missing values, no duplicates, no errors
+Coverage: 7 regions, 185 countries, 12 product types
+
+---
+
+📑 Column Description
+| Column Name           | Description                         |
+| --------------------- | ----------------------------------- |
+| *Example:* `Order_ID` | Unique ID for each order            |
+| `Product`             | Name of the product sold            |
+| `Quantity`            | Number of units sold                |
+| `Price`               | Selling price per unit              |
+| `Total_Amount`        | Final amount (Quantity × Price)     |
+| `Order_Date`          | Date of the transaction             |
+| `Customer_Name`       | Name of the customer (if available) |
+| `Region`              | Sales region/location               |
+
+
+---
+
+🧹 Data Cleaning Performed**
+* Removed duplicate records
+* Fixed inconsistent formatting
+* Filled or removed missing values
+* Converted date format to standard (YYYY-MM-DD)
+* Calculated new fields where required (e.g., `Total_Amount`)
+* Standardized text fields (case, spacing, categories)
+
+---
+🎯 Purpose of the Dataset
+
+This cleaned dataset can be used for:
+* Sales trend analysis
+* Revenue forecasting
+* Dashboard creation (Power BI, Tableau, Excel)
+* Customer behavior analysis
+* Machine learning models (prediction/classification)
+
+---
+
+📊 Recommended Analysis
+* Monthly and yearly sales trends
+* Top-selling products
+* Profit and revenue analysis
+* Region-wise sales performance
+* Customer purchase patterns
+
+---
+
+Tools You Can Use
+
+Python (Pandas, NumPy, Matplotlib)
+Excel
